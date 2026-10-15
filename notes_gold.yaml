@@ -1,0 +1,19 @@
+# Gold triples for the three provided handover notes (ontology vocabulary, KG node names).
+# Persons are KG usernames: Sam Whitaker = hunter1, Dana Ortiz = analyst1, Lena Yamamoto = manager1,
+# Tess Baker = tbaker, Rafael Khan = rkhan, Mina Lee = mlee.
+handover_2022-01-21_night.md:
+  - [hunter1, REVIEWED, vpn]
+  - [hunter1, BLOCKED, 213.13.146.142]
+  - [hunter1, REVIEWED, inet-firewall]
+  - [vpn, HAS_IP, 172.19.131.174]
+  - [vpn, OWNED_BY, tbaker]
+  - [inet-firewall, OWNED_BY, tbaker]
+handover_2022-01-23_day.md:
+  - [analyst1, REVIEWED, mail]
+  - [alyssa.hayes, LOGGED_INTO, mail]
+  - [mail, OWNED_BY, rkhan]
+handover_2022-01-24_morning.md:
+  - [analyst1, ESCALATED, intranet-server]
+  - [manager1, REVIEWED, intranet-server]
+  - [vpn, HAS_IP, 172.19.131.174]
+  - [intranet-server, OWNED_BY, mlee]

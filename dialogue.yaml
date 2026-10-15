@@ -1,0 +1,42 @@
+# Part D: a 10-turn conversation; every turn after the first depends on memory
+turns:
+- turn: 1
+  user: Which host owns the IP address 172.19.131.174?
+  gold_facts:
+  - vpn
+- turn: 2
+  user: Who is the owner of that host?
+  gold_facts:
+  - Tess Baker|tbaker
+- turn: 3
+  user: Which team is she on?
+  gold_facts:
+  - Network Operations
+- turn: 4
+  user: How many alerts did that host raise on 2022-01-22?
+  gold_facts:
+  - '960'
+- turn: 5
+  user: Which rule fired most often on it overall?
+  gold_facts:
+  - 86601|Suricata
+- turn: 6
+  user: Now look at intranet-server instead. Who owns it?
+  gold_facts:
+  - Mina Lee|mlee
+- turn: 7
+  user: Which source IP caused its burst of level-10 alerts on Jan 24, 2022?
+  gold_facts:
+  - 172.19.131.174
+- turn: 8
+  user: What is ATT&CK technique T1078 called?
+  gold_facts:
+  - Valid Accounts
+- turn: 9
+  user: Which tactic does T1110.001 belong to?
+  gold_facts:
+  - Credential Access
+- turn: 10
+  user: 'Going back to the very first host we talked about: what is its criticality?'
+  gold_facts:
+  - '5'
